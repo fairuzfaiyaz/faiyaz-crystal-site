@@ -1,4 +1,4 @@
-import CrystalizedBall from './components/CrystalizedBall';
+import PatternWaves from './components/PatternWaves';
 import './App.css';
 
 const pieces = [
@@ -31,18 +31,18 @@ export default function App() {
               <a className="btn" href="#collection">See the collection</a>
               <a className="link" href="#studio">Meet the studio</a>
             </div>
-            <p className="hint">Move your cursor across the sphere. Click to shake it.</p>
+            <p className="hint">Move your cursor across the pattern. Click to make a ripple.</p>
           </div>
 
           <div className="hero-ball" style={{ width: '100%', height: '600px', position: 'relative' }}>
-            <CrystalizedBall
-              preset="plasma"
-              color="#F25BD0"
-              size={0.7}
-              crackle={0.85}
-              fill={0.5}
+            <PatternWaves
+              preset="silk"
+              color="#f8d5ff"
+              backgroundColor="transparent"
+              fade="edges"
               interactive
-              hoverStrength={0.7}
+              cursorSize={56}
+              cursorStrength={0.7}
             />
           </div>
         </section>
