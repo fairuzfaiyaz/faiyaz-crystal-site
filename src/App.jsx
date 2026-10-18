@@ -10,6 +10,17 @@ const pieces = [
 export default function App() {
   return (
     <div className="page">
+      <PatternWaves
+        className="page-background"
+        preset="silk"
+        color="#f8d5ff"
+        backgroundColor="transparent"
+        fade="edges"
+        interactive
+        cursorSize={56}
+        cursorStrength={0.7}
+      />
+
       <header className="nav">
         <a className="brand" href="#top">Lumen Glassworks</a>
         <nav aria-label="Primary">
@@ -32,18 +43,6 @@ export default function App() {
               <a className="link" href="#studio">Meet the studio</a>
             </div>
             <p className="hint">Move your cursor across the pattern. Click to make a ripple.</p>
-          </div>
-
-          <div className="hero-ball" style={{ width: '100%', height: '600px', position: 'relative' }}>
-            <PatternWaves
-              preset="silk"
-              color="#f8d5ff"
-              backgroundColor="transparent"
-              fade="edges"
-              interactive
-              cursorSize={56}
-              cursorStrength={0.7}
-            />
           </div>
         </section>
 
